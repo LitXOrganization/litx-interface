@@ -140,8 +140,8 @@ export default {
 
     SUBGRAPH: {
         [56]: {
-            infoURL: "https://api.thegraph.com/subgraphs/name/iliaazhel/litx-analytics",
-            farmingURL: "https://api.thegraph.com/subgraphs/name/iliaazhel/litx-farming",
+            infoURL: "https://api.thegraph.com/subgraphs/name/iliaazhel/litx-v1-1",
+            farmingURL: "https://api.thegraph.com/subgraphs/name/iliaazhel/litx-v1-1-farming",
             blocklyticsURL: "https://api.thegraph.com/subgraphs/name/iliaazhel/bsc-blocks"
         },
         [369]: {
