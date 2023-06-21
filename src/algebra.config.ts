@@ -77,6 +77,17 @@ export default {
             defaultTokens: {
                 ["0xa1077a294dde1b09bb078844df40758a5d0f9a27"]: { name: "Wrapped PLS", symbol: "WPLS", decimals: 18 },
                 ["0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07"]: { name: "USD Coin from Ethereum", symbol: "USDC", decimals: 6 },
+                ["0x95b303987a60c71504d99aa1b13b4da07b0790ab"]: { name: "PulseX", symbol: "PulseX", decimals: 18 },
+                ["0xefd766ccb38eaf1dfd701853bfce31359239f305"]: { name: "DAI", symbol: "DAI", decimals: 18 },
+                ["0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d"]: { name: "INC", symbol: "INC", decimals: 18 },
+                ["0x57fde0a71132198bbec939b98976993d8d89d225"]: { name: "HEX from Etherium", symbol: "HEX", decimals: 8 },
+                ["0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f"]: { name: "USDT from Etherium", symbol: "USDT", decimals: 6 },
+                ["0xb17d901469b9208b17d916112988a3fed19b5ca1"]: { name: "WBTC from Etherium", symbol: "WBTC", decimals: 8 },
+                ["0x02dcdd04e3f455d838cd1249292c58f3b79e3c3c"]: { name: "WETH from Etherium", symbol: "WETH", decimals: 18 },
+                ["0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"]: { name: "Free HEX", symbol: "HEX", decimals: 8 },
+                ["0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"]: { name: "Free WETH", symbol: "WETH", decimals: 18 },
+                ["0x8a7FDcA264e87b6da72D000f22186B4403081A2a"]: { name: "pXEN", symbol: "pXEN", decimals: 18 },
+                
             },
             tokensForMultihop: {
                 ["0xa1077a294dde1b09bb078844df40758a5d0f9a27"]: { name: "Wrapped PLS", symbol: "WPLS", decimals: 18 },
@@ -85,6 +96,16 @@ export default {
             tokensLogos: {
                 ["0xa1077a294dde1b09bb078844df40758a5d0f9a27"]: 'https://pulsechain.com/img/favicon128.png',
                 ["0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png',
+                ["0x95b303987a60c71504d99aa1b13b4da07b0790ab"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/25417.png',
+                ["0xefd766ccb38eaf1dfd701853bfce31359239f305"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/4943.png',
+                ["0x2fa878ab3f87cc1c9737fc071108f904c0b0c95d"]: 'https://tokens.app.pulsex.com/images/tokens/0x2fa878Ab3F87CC1C9737Fc071108F904c0B0C95d.png',
+                ["0x57fde0a71132198bbec939b98976993d8d89d225"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5015.png',
+                ["0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png',
+                ["0xb17d901469b9208b17d916112988a3fed19b5ca1"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
+                ["0x02dcdd04e3f455d838cd1249292c58f3b79e3c3c"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
+                ["0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5015.png',
+                ["0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
+                ["0x8a7FDcA264e87b6da72D000f22186B4403081A2a"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22118.png'
             },
             stableTokens: {
                 ["0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07"]: { name: "USD Coin from Ethereum", symbol: "USDC", decimals: 6 },
