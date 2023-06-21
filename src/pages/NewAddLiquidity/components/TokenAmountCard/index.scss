@@ -1,0 +1,92 @@
+.token-amount-card {
+    &-wrapper {
+        background-color: var(--panel1);
+        border-radius: 8px; 
+        width: 542px;
+        border: 1px solid var(--border1);
+    }
+
+    &__locked {
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(38, 52, 63, 0.85);
+        border-radius: 8px;
+    }
+
+    &__logo {
+        width: 35px;
+        height: 35px;
+        background: #3a4e5d;
+        border-radius: 50%; 
+    }
+
+    &__input {
+        background-color: var(--panel2) !important;
+        border: 1px solid var(--border1) !important;
+        border-radius: 8px !important;
+        color: var(--text1) !important;
+        padding: 8px 1rem !important;
+        width: 100% !important;
+        font-size: unset !important;
+        text-align: left !important;
+
+        &.is-usd {
+            padding: 8px 1rem 8px 2rem !important;
+        }
+
+        &:focus {
+            border: 1px solid var(--primary-hover) !important;
+        }
+    }
+
+    &__error {
+        padding: 8px;
+        background-color: var(--error-bg);
+        color: var(--error-text);
+        border: 1px solid var(--error-border);
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    &__max-btn {
+        background: transparent;
+        color: var(--primary);
+        border: none;
+        padding: 0;
+        font-size: 13px;
+        margin-top: 6px;
+
+        &:disabled {
+            pointer-events: none;
+            color: #506f87;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__approve-btn {
+        padding: 4px 8px;
+        background-color: var(--primary-weak);
+        border-radius: 6px;
+        border: none;
+        color: white;
+
+        &:hover {
+            background-color: var(--primary-hover);
+        }
+    }
+
+    &__approved {
+        color: #26a626;
+    }
+
+    &__usd {
+        position: absolute;
+        left: 13px;
+        top: 11px;
+        z-index: 999;
+    }
+}

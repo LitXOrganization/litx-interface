@@ -1,0 +1,73 @@
+.header-menu {
+
+    background: var(--panel0);
+    color: var(--text1);
+    width: 100%;
+    border: 1px solid var(--border1);
+
+    &__title {
+        cursor: default;
+        font-weight: 600;
+        font-size: 15px;
+        border-bottom: 1px solid var(--border1);
+        background-color: var(--panel2);
+        border-radius: 8px 8px 0 0;
+    }
+
+    &__list {
+        &-item {
+
+            cursor: pointer;
+            
+            &:first-of-type {
+                border-radius: 8px 8px 0 0;
+            }
+
+            &:last-of-type {
+                border-radius: 0 0 8px 8px;
+            }
+            
+            &:not(&:last-of-type) {
+                border-bottom: 1px solid var(--border1);
+            }
+
+            
+            & > a {
+                color: var(--text1);
+                & > span {                    
+                    margin-right: 0;
+                    transition-duration: .2s;
+                }
+            }
+    
+            &:hover {
+                background-color: var(--panel1);
+                
+                // & > a {
+
+                //     & > span {
+                //         &:last-of-type {
+                //             margin-right: -8px;
+                //         }
+                //     }
+                // }
+            }
+
+            &.disabled {
+                cursor: default;
+                &:hover {
+                    background-color: unset;
+                }
+            }
+
+            &.active {
+                background-color: var(--panel2);
+
+                & > a {
+                    color: var(--secondary) !important;
+                }
+            }
+            
+        }
+    }
+}

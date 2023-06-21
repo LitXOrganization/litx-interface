@@ -1,0 +1,70 @@
+.token-card {
+
+    background-color: var(--panel1);
+    border-radius: 8px;
+    width: 240px;
+    border: 1px solid var(--border1);
+    cursor: pointer;
+    
+    &__balance {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    &:hover {
+        
+        .token-card-selector {
+            &__btn {
+                background-color: var(--panel-hover);
+                color: white;
+                .token-card-selector__btn-chevron {
+                    margin-right: 5px;
+                }
+            }
+        }
+
+    
+    }
+
+    &-logo {
+        width: 35px;
+        height: 35px;
+        background-color: var(--circle-bg);
+        border-radius: 50%;
+    }
+
+    &-selector {
+
+        &-chevron {
+            transition-duration: .3s;
+        }
+
+        &__btn {
+            border: none;
+            padding: 6px 8px 6px 1rem;
+            border-radius: 8px;
+            background-color: var(--panel2);
+            color: var(--text1);
+            font-size: 15px;
+            $self: &;
+
+            &-chevron {
+                transition-duration: .3s;
+            }
+
+            &:hover {
+                background-color: var(--panel-hover);
+                color: white;
+
+                #{$self}-chevron {
+                    margin-right: 5px;
+                }
+            }
+            // &:hover {
+            //     #{$self}-chevron {
+            //         margin-right: 5px;
+            //     }
+            // }
+        }
+    }
+}

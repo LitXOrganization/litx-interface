@@ -1,0 +1,28 @@
+.common-bases {
+
+  button {
+    border: 1px solid var(--primary);
+    color: var(--text1);
+
+    &:disabled {
+      border-color: var(--light-gray);
+      opacity: .8;
+    }
+  }
+}
+
+.currency-row {
+  height: 56px;
+  cursor: pointer;
+  opacity: 1;
+  background-color: var(--panel2);
+
+  &[data-disabled=true] {
+    cursor: default;
+    opacity: .5;
+  }
+
+  &[data-selected=true ] {
+    opacity: .5;
+  }
+}

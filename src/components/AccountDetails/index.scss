@@ -1,0 +1,16 @@
+.account-details {
+  border: 1px solid var(--primary);
+
+  &__theme-switcher {
+    display: none;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .account-details {
+    &__theme-switcher {
+      display: block;
+    }
+  }
+}

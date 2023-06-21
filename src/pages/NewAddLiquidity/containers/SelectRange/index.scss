@@ -1,0 +1,42 @@
+.range {
+    &__notification {
+        position: relative;
+        padding: 8px;
+        border-radius: 0 0 8px 8px;
+        text-align: center;
+
+        &.out-of-range {
+            background-color: var(--warning-bg);
+            color: var(--warning-text);
+        }
+
+        &.error {
+            background-color: var(--error-bg);
+            color: var(--error-text);
+        }
+    }
+
+    &__chart {
+        width: 542px;
+        background-color: var(--panel1);
+        border-radius: 8px;
+        border: 1px solid var(--border1);
+    }
+}
+
+
+@media screen and (max-width: 960px) {
+    .range {
+        &__chart {
+            width: 100%;
+        }
+    }
+  }
+  
+  @media screen and (max-width: 720px) {
+  
+  }
+  
+  @media screen and (max-width: 500px) {
+  
+  }
