@@ -33,6 +33,8 @@ export default {
                 ["0x55d398326f99059ff775485246999027b3197955"]: { name: "USDT", symbol: "USDT", decimals: 18 },
                 ["0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"]: { name: "USDC", symbol: "USDC", decimals: 18 },
                 ["0x20f663cea80face82acdfa3aae6862d246ce0333"]: { name: "Drip Network", symbol: "DRIP", decimals: 18 },
+                ["0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"]: { name: "Bitcoin", symbol: "BTC", decimals: 18 },
+                ["0x2170ed0880ac9a755fd29b2688956bd959f933f8"]: { name: "Etherium", symbol: "ETH", decimals: 18 },
             },
             // Tokens, which would be used for creating multihop routes
             tokensForMultihop: {
@@ -47,7 +49,9 @@ export default {
                 ["0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png',
                 ["0x20f663cea80face82acdfa3aae6862d246ce0333"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/11093.png',
                 ["0x55d398326f99059ff775485246999027b3197955"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png',
-                ["0x2ab0e9e4ee70fff1fb9d67031e44f6410170d00e"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22118.png'
+                ["0x2ab0e9e4ee70fff1fb9d67031e44f6410170d00e"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22118.png',
+                ["0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
+                ["0x2170ed0880ac9a755fd29b2688956bd959f933f8"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'
             },
             stableTokens: {
                 ["0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"]: { name: "USDC", symbol: "USDC", decimals: 18 },
@@ -84,9 +88,7 @@ export default {
                 ["0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f"]: { name: "USDT from Etherium", symbol: "USDT", decimals: 6 },
                 ["0xb17d901469b9208b17d916112988a3fed19b5ca1"]: { name: "WBTC from Etherium", symbol: "WBTC", decimals: 8 },
                 ["0x02dcdd04e3f455d838cd1249292c58f3b79e3c3c"]: { name: "WETH from Etherium", symbol: "WETH", decimals: 18 },
-                ["0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"]: { name: "Free HEX", symbol: "HEX", decimals: 8 },
-                ["0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"]: { name: "Free WETH", symbol: "WETH", decimals: 18 },
-                ["0x8a7FDcA264e87b6da72D000f22186B4403081A2a"]: { name: "pXEN", symbol: "pXEN", decimals: 18 },
+                ["0x8a7fdca264e87b6da72d000f22186b4403081a2a"]: { name: "pXEN", symbol: "pXEN", decimals: 18 },
                 
             },
             tokensForMultihop: {
@@ -103,12 +105,12 @@ export default {
                 ["0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png',
                 ["0xb17d901469b9208b17d916112988a3fed19b5ca1"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
                 ["0x02dcdd04e3f455d838cd1249292c58f3b79e3c3c"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
-                ["0x2b591e99afe9f32eaa6214f7b7629768c40eeb39"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/5015.png',
-                ["0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
-                ["0x8a7FDcA264e87b6da72D000f22186B4403081A2a"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22118.png'
+                ["0x8a7fdca264e87b6da72d000f22186b4403081a2a"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22118.png',
             },
             stableTokens: {
+                ["0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f"]: { name: "USDT from Etherium", symbol: "USDT", decimals: 6 },
                 ["0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07"]: { name: "USD Coin from Ethereum", symbol: "USDC", decimals: 6 },
+                ["0xefd766ccb38eaf1dfd701853bfce31359239f305"]: { name: "DAI", symbol: "DAI", decimals: 18 },
             },
             stableTokenForUSDPrice: { address: "0x15d38573d2feeb82e7ad5187ab8c1d52810b1f07", name: "USD Coin from Ethereum", symbol: "USDC", decimals: 6 },
             filterForScamTokens: {

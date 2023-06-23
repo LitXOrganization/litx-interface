@@ -18,9 +18,13 @@ import useTheme from "hooks/useTheme";
 import { FixedContentRow, Tag, TagContainer } from "./styled";
 import { WrappedCurrency } from "../../models/types";
 import "./index.scss";
+import { useActiveWeb3React } from "hooks/web3";
+
+import AlgebraConfig from "algebra.config";
+import { ChainId } from "constants/addresses";
 
 function currencyKey(currency: Currency): string {
-    return currency.isToken ? currency.address : "WETH";
+    return currency.isToken ? currency.address : "WNATIVE";
 }
 
 function TokenTags({ currency }: { currency: Currency }) {
@@ -67,6 +71,8 @@ function CurrencyRow({ currency, onSelect, isSelected, otherSelected, style }: C
     const isOnSelectedList = isTokenOnList(selectedTokenList, currency.isToken ? currency : undefined);
     const customAdded = useIsUserAddedToken(currency);
 
+    const { chainId } = useActiveWeb3React();
+
     // only show add or remove buttons if not on selected list
     return (
         <div className={`currency-row flex-s-between p-1 br-8 mv-05 token-item-${key}`} onClick={() => (isSelected ? null : onSelect())} data-disabled={isSelected} data-selected={otherSelected}>
@@ -76,7 +82,13 @@ function CurrencyRow({ currency, onSelect, isSelected, otherSelected, style }: C
                     <Text title={currency.name} fontWeight={500}>
                         {currency.symbol}
                     </Text>
-                    <span className={"fs-075"}>{!currency.isNative && !isOnSelectedList && customAdded ? <Trans>{currency.name} • Added by user</Trans> : "WETH"}</span>
+                    <span className={"fs-075"}>
+                        {!currency.isNative && !isOnSelectedList && customAdded ? (
+                            <Trans>{currency.name} • Added by user</Trans>
+                        ) : (
+                            AlgebraConfig.CHAIN_PARAMS[chainId || ChainId.BNB].wrappedNativeCurrency.symbol
+                        )}
+                    </span>
                 </div>
             </div>
             <TokenTags currency={currency} />
