@@ -45,6 +45,7 @@ import { LinkedCurrency } from "./LinkedCurrency";
 import { CurrentPriceCard } from "./CurrentPriceCard";
 import { WrappedCurrency } from "../../models/types";
 import Card from "../../shared/components/Card/Card";
+import AlgebraConfig from "algebra.config";
 
 function useQuery() {
     const { search } = useLocation();
@@ -394,7 +395,7 @@ export default function PositionPage({
                                                 <Trans>$-</Trans>
                                             </span>
                                         )}
-                                        {ownsNFT && (feeValue0?.greaterThan(0) || feeValue1?.greaterThan(0) || !!collectMigrationHash) ? (
+                                        {(ownsNFT || isOnFarming) && (feeValue0?.greaterThan(0) || feeValue1?.greaterThan(0) || !!collectMigrationHash) ? (
                                             <button className={"btn primary pv-025 ph-05 br-8"} disabled={collecting || !!collectMigrationHash} onClick={collect}>
                                                 {!!collectMigrationHash && !isCollectPending ? (
                                                     <span>
@@ -431,7 +432,7 @@ export default function PositionPage({
                                 </Card>
                                 {showCollectAsWeth && (
                                     <div className={"flex-s-between mt-075"}>
-                                        <Trans>Collect as WETH</Trans>
+                                        <span>{`Collect as ${AlgebraConfig.CHAIN_PARAMS[chainId || 56].nativeCurrency.symbol}`}</span>
                                         <Toggle id="receive-as-weth" isActive={receiveWETH} toggle={() => setReceiveWETH((receiveWETH) => !receiveWETH)} />
                                     </div>
                                 )}

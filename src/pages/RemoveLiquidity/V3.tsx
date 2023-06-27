@@ -38,6 +38,7 @@ import { WrappedCurrency } from "../../models/types";
 import { GAS_PRICE_MULTIPLIER } from "../../hooks/useGasPrice";
 import Card from "../../shared/components/Card/Card";
 import { isMobileOnly } from "react-device-detect";
+import AlgebraConfig from "algebra.config";
 
 const DEFAULT_REMOVE_V3_LIQUIDITY_SLIPPAGE_TOLERANCE = new Percent(5, 100);
 
@@ -215,7 +216,7 @@ function Remove({ tokenId }: { tokenId: BigNumber }) {
                 </RowBetween>
                 {feeValue0?.greaterThan(0) || feeValue1?.greaterThan(0) ? (
                     <>
-                        <TYPE.italic fontSize={12} color={'var(--primary-disabled)'} textAlign="left" padding={"8px 0 0 0"}>
+                        <TYPE.italic fontSize={12} color={"var(--primary-disabled)"} textAlign="left" padding={"8px 0 0 0"}>
                             <Trans>You will also collect fees earned from this position.</Trans>
                         </TYPE.italic>
                         <RowBetween>
@@ -353,9 +354,7 @@ function Remove({ tokenId }: { tokenId: BigNumber }) {
 
                         {showCollectAsWeth && (
                             <RowBetween>
-                                <TYPE.main>
-                                    <Trans>Collect as WETH</Trans>
-                                </TYPE.main>
+                                <TYPE.main>{`Collect as ${AlgebraConfig.CHAIN_PARAMS[chainId || 56].nativeCurrency.symbol}`}</TYPE.main>
                                 <Toggle id="receive-as-weth" isActive={receiveWETH} toggle={() => setReceiveWETH((receiveWETH) => !receiveWETH)} />
                             </RowBetween>
                         )}
