@@ -35,6 +35,7 @@ export default {
                 ["0x20f663cea80face82acdfa3aae6862d246ce0333"]: { name: "Drip Network", symbol: "DRIP", decimals: 18 },
                 ["0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"]: { name: "Bitcoin", symbol: "BTC", decimals: 18 },
                 ["0x2170ed0880ac9a755fd29b2688956bd959f933f8"]: { name: "Etherium", symbol: "ETH", decimals: 18 },
+                ["0xf418af970bc08ae22fd3148de612a61807a138cb"]: { name: "LitX token", symbol: "LitX", decimals: 18 },
             },
             // Tokens, which would be used for creating multihop routes
             tokensForMultihop: {
@@ -51,7 +52,9 @@ export default {
                 ["0x55d398326f99059ff775485246999027b3197955"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/825.png',
                 ["0x2ab0e9e4ee70fff1fb9d67031e44f6410170d00e"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/22118.png',
                 ["0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
-                ["0x2170ed0880ac9a755fd29b2688956bd959f933f8"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png'
+                ["0x2170ed0880ac9a755fd29b2688956bd959f933f8"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
+                ["0xf418af970bc08ae22fd3148de612a61807a138cb"]: 'https://i.ibb.co/nrtkD72/L-6.png',
+                
             },
             stableTokens: {
                 ["0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"]: { name: "USDC", symbol: "USDC", decimals: 18 },
