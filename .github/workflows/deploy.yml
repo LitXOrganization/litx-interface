@@ -4,8 +4,8 @@ name: LitX UI Deployment
 # When workflow is triggered
 on:
   push:
-    tags:
-      - "v*"
+    branches:
+      - main
 
 # Jobs to carry out
 jobs:
