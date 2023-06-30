@@ -54,7 +54,7 @@ export default {
                 ["0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1.png',
                 ["0x2170ed0880ac9a755fd29b2688956bd959f933f8"]: 'https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png',
                 ["0xf418af970bc08ae22fd3148de612a61807a138cb"]: 'https://i.ibb.co/nrtkD72/L-6.png',
-                
+
             },
             stableTokens: {
                 ["0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"]: { name: "USDC", symbol: "USDC", decimals: 18 },
@@ -69,10 +69,6 @@ export default {
                     ["DC"]: "0x7b4328c127b85369d9f82ca0503b000d09cf9180"
                 },
                 possibleFakeNames: [
-                    {
-                        names: ['Doge Dragon', 'DogeDragon', 'Dragon Doge', 'DragonDoge'],
-                        realAddress: "0x582daef1f36d6009f64b74519cfd612a8467be18"
-                    },
                     {
                         names: ['Dogechain Token', 'DogeChain Token', 'Dogechain', 'DogeChain'],
                         realAddresses: "0x7b4328c127b85369d9f82ca0503b000d09cf9180"
@@ -92,7 +88,7 @@ export default {
                 ["0xb17d901469b9208b17d916112988a3fed19b5ca1"]: { name: "WBTC from Etherium", symbol: "WBTC", decimals: 8 },
                 ["0x02dcdd04e3f455d838cd1249292c58f3b79e3c3c"]: { name: "WETH from Etherium", symbol: "WETH", decimals: 18 },
                 ["0x8a7fdca264e87b6da72d000f22186b4403081a2a"]: { name: "pXEN", symbol: "pXEN", decimals: 18 },
-                
+
             },
             tokensForMultihop: {
                 ["0xa1077a294dde1b09bb078844df40758a5d0f9a27"]: { name: "Wrapped PLS", symbol: "WPLS", decimals: 18 },
