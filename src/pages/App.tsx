@@ -43,7 +43,7 @@ export default function App() {
     const networkFailed = useIsNetworkFailed();
 
     useEffect(() => {
-        console.log("[FROM NETLIFY V2]");
+        console.log("[FROM NETLIFY V3]");
 
         if (!account) return;
 
