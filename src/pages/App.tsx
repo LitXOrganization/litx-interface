@@ -43,6 +43,8 @@ export default function App() {
     const networkFailed = useIsNetworkFailed();
 
     useEffect(() => {
+        console.log("[FROM NETLIFY]");
+
         if (!account) return;
 
         type __window = Window & { dataLayer: any };
